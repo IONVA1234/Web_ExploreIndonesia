@@ -1,0 +1,104 @@
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 550px;
+  padding: 80px 40px;
+  margin: 20px 0;          
+  gap: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background-image: url('../png/bali.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 9999px rgba(0,0,0,.35);
+  backdrop-filter: blur(1px);
+  filter: brightness(.85);
+  z-index: 0;
+}
+
+.len{
+    height: 820px;
+}
+/* teks di atas background */
+.hero-text {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 450px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+}
+
+.yt-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 1px;
+}
+
+.yt-container iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.cta, .cta2 {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #5BDB96;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-weight: 600;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.cta:hover{
+    transform: translateY(2px);
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(25, 25, 25, 0.35);
+    background-color: #45a270;
+}
+
+.grid{
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); 
+}
+
+.why ul li {
+  list-style: none;
+  margin: 6px 0;
+}
+
+.review {
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.about {
+  background: var(--nav);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 8px 0;
+}

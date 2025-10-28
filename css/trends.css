@@ -1,0 +1,72 @@
+.trend {
+  width: 90%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.trend-head {
+  text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-bottom: 22px;
+}
+
+.trend-head h2 {
+  margin: 0 0 6px 0;
+  font-size: 28px;
+  color: var(--text, #e6e8ef);
+}
+
+.trend-head p {
+  margin: 0;
+  opacity: .7;
+  color: var(--text, #e6e8ef);
+}
+
+.trend-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .trend-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.trend-card {                
+  background: var(--nav);   
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  display: grid;
+  transition: transform .15s ease, box-shadow .25s ease;
+  height: 350px;
+  width: 350px;
+}
+
+.trend-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1px 1.5ch var(--text) ;
+}
+
+.trend-body {
+  padding: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.trend-body h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.trend-body p {
+  margin: 0;
+  color: var(--text);
+}
+
