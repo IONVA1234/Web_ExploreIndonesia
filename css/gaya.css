@@ -46,11 +46,11 @@ body {
 }
 
 .icon::before {
-  content: "light";
+  content:"🌙";
 }
 
 body.light .icon::before {
-  content: "dark";
+  content: "☀️";
 }
 
 .no-anim *, .no-anim {
@@ -80,6 +80,7 @@ body.light {
          #0f1217;
   --ic: rgb(0, 0, 0);
   --text: #e6e8ef;
+  
   --bgn:rgba(17,21,34,.8);
   --clr:#b6f09c;
   --fo:rgba(11, 14, 22, 0.6);
