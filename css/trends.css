@@ -1,5 +1,5 @@
 .trend {
-  width: 90%;
+  width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-top: 100px;
@@ -8,7 +8,7 @@
 
 .trend-head {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-bottom: 22px;
 }
@@ -26,8 +26,8 @@
 }
 
 .trend-grid {
-  display: grid;
-  gap: 18px;
+  display: flex;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -45,7 +45,8 @@
   display: grid;
   transition: transform .15s ease, box-shadow .25s ease;
   height: 350px;
-  width: 350px;
+  text-align: center;
+  width: 1000px;
 }
 
 .trend-card:hover {
