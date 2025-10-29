@@ -1,11 +1,10 @@
 
-.card.category{
+.card.katpil{
   position: relative;
   margin-top: 15px;
-  width: 200px;
-  display: block;
-  min-height: 160px;           
-  padding: 16px;
+  width: 160px;
+  display: block;          
+  padding: 19px;
   border-radius: 16px;
   background: var(--nav);
   border: 1px solid rgba(80, 80, 80, 0.08);
@@ -16,13 +15,35 @@
   transition: transform .15s ease, box-shadow .25s ease, border-color .25s ease;
 }
 
+.card-little{
+    min-height: 60px; 
+}
+
+.card-medium{
+  min-height: 130px;
+}
+
+
+.grid{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
+  justify-content: center;
+  justify-items: center;
+}
+
 .kategori{
-    min-height: 280px; 
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    margin-bottom: 45px;
     background: var(--bgn);
     border-radius: 20px;
     padding: 20px;
     border: 1px solid var(--brd);
 }
+
+
 
 .card-title{
   position: absolute; 
@@ -41,54 +62,92 @@
   opacity: .78;
   color: var(--text);
   text-align: right;
-  max-width: 120px;
-  line-height: 1.3;
+  max-width: 99px;
+  line-height: h;
   pointer-events: none;
   z-index: 2;
 }
 
 
-.card.category:hover .card-desc {
+.card.katpil:hover .card-desc {
   opacity: 1;
   color: var(--tone);
   transition: .25s ease;
 }
 
-.card.category::before{
-  content:""; position:absolute; top:0; left:0; width:60%; height:72px;
+.card.katpil::before{
+  content:""; position:absolute; 
+  top:0; 
+  left:0; 
+  width:60%; 
+  height:72px;
   border-top-left-radius:16px;
   background: radial-gradient(220px 120px at 0% 0%, var(--tone-soft, rgba(92,219,149,.35)), transparent 60%);
-  opacity:0; transition:opacity .25s ease; pointer-events:none; z-index:1;
+  opacity:0; 
+  transition:opacity .25s ease; 
+  pointer-events:none; 
+  z-index:1;
 }
-.card.category:hover::before{ opacity:1; }
-
-.card.category::after{
-  content:""; position:absolute; inset:-14px; border-radius:20px;
-  background: radial-gradient(260px 160px at 14% 10%, var(--tone-glow, rgba(37, 147, 87, 0.25)), transparent 60%);
-  filter: blur(10px); opacity:0; transition:opacity .25s ease; pointer-events:none; z-index:0;
+.card.katpil:hover::before{ 
+  opacity:1;
 }
-.card.category:hover::after{ opacity:1; }
 
-.card.category:hover{
+.card.katpil::after{
+  content:""; 
+  position:absolute; 
+  inset:-14px; 
+  border-radius:20px;
+  background: 
+  radial-gradient(260px 160px at 14% 10%, var(--tone-glow, rgba(37, 147, 87, 0.25)), transparent 60%);
+  filter: blur(10px); 
+  opacity:0; 
+  transition:opacity .25s ease; 
+  pointer-events:none; 
+  z-index:0;
+}
+.card.katpil:hover::after{ 
+  opacity:1; 
+}
+
+.card.katpil:hover{
   transform: translateY(-3px);
   box-shadow: 0 5px 15px var(--text);
   border-color: rgba(255,255,255,.18);
 }
 
-.card.category::before{
+.card.katpil::before{
   background: radial-gradient(220px 120px at 0% 0%, var(--tone-soft), transparent 60%);
   transition: opacity .25s ease;
 }
 
-.card.category::after{
+.card.katpil::after{
   background: radial-gradient(260px 160px at 14% 10%, var(--tone-glow), transparent 60%);
   transition: opacity .25s ease, filter .25s ease;
 }
 
-.card.category[data-tone="green"]  { --tone: var(--tone-green);  --tone-soft: var(--tone-green-soft);  --tone-glow: var(--tone-green-glow); }
-.card.category[data-tone="blue"]   { --tone: var(--tone-blue);   --tone-soft: var(--tone-blue-soft);   --tone-glow: var(--tone-blue-glow); }
-.card.category[data-tone="orange"] { --tone: var(--tone-orange); --tone-soft: var(--tone-orange-soft); --tone-glow: var(--tone-orange-glow); }
-.card.category[data-tone="purple"] { --tone: var(--tone-purple); --tone-soft: var(--tone-purple-soft); --tone-glow: var(--tone-purple-glow); }
+.card.katpil[data-tone="green"]  { 
+  --tone: var(--tone-green);  
+  --tone-soft: var(--tone-green-soft);  
+  --tone-glow: var(--tone-green-glow); 
+}
+
+.card.katpil[data-tone="blue"]   { 
+  --tone: var(--tone-blue);   
+  --tone-soft: var(--tone-blue-soft);   
+  --tone-glow: var(--tone-blue-glow); 
+}
+
+.card.katpil[data-tone="orange"] { 
+  --tone: var(--tone-orange); 
+  --tone-soft: var(--tone-orange-soft); 
+  --tone-glow: var(--tone-orange-glow); 
+}
+
+.card.katpil[data-tone="purple"] { 
+  --tone: var(--tone-purple); 
+  --tone-soft: var(--tone-purple-soft); 
+  --tone-glow: var(--tone-purple-glow); 
+}
 
 
 :root{

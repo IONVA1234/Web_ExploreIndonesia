@@ -67,7 +67,7 @@ body.light .icon::before {
   --bgn: rgba(241, 241, 241, 0.6);
   --clr: #5BDB96;
   --fo: #F7F9FC;
-  --nav: rgba(0, 123, 255, 0.115);
+  --nav: rgba(101, 174, 251, 0.129);
   --card: #ffffff;
   --border: #e5e7eb;
   --brd:rgba(0, 0, 0, 0.176);
@@ -80,7 +80,7 @@ body.light {
          #0f1217;
   --ic: rgb(0, 0, 0);
   --text: #e6e8ef;
-  
+
   --bgn:rgba(17,21,34,.8);
   --clr:#b6f09c;
   --fo:rgba(11, 14, 22, 0.6);
@@ -117,11 +117,20 @@ header {
 a {
   color: var(--link);
   font-weight: 600;
+  border: 1px solid transparent;
   text-decoration: none;
+  margin: 3px;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.overlay-link {
+  position: absolute;
+  inset: 0; 
+  z-index: 1;
+  text-decoration: none;
 }
 
 .batas {
@@ -165,15 +174,14 @@ nav{
 nav a {
     color: var(--text);
     text-decoration: none;
-  padding: 12px 12px;
-  border-radius: 10px;
-  transition: background .22s ease;
-  
-    
+    padding: 12px 12px;
+    border-radius: 10px;
+    transition: background .22s ease;
 }
 
 .in,nav a:hover {
   background: var(--nav);
+  border: 1px solid var(--brd);
   text-decoration: none;
 }
 

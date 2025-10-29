@@ -9,7 +9,7 @@
   padding-bottom: 28px;
 }
 
-.city-card{
+.kota-kartu{
   max-width: 1060px;
   justify-content: space-between;
   width: 100%;
@@ -36,7 +36,7 @@
   text-decoration: none;
 }
 
-.city-card::before{
+.kota-kartu::before{
   content:"";
   position:absolute;
   top:0; left:0;
@@ -49,7 +49,7 @@
   z-index:0;
 }
 
-.city-card::after{
+.kota-kartu::after{
   content:"";
   position:absolute;
   inset:-14px;
@@ -62,17 +62,22 @@
   z-index:-1;
 }
 
-.city-card:hover{
+.kota-kartu:hover{
   transform: translateY(-3px);
   border-color: rgba(255,255,255,.18);
   box-shadow: 0 5px 15px rgba(0,0,0,.45);
   cursor: pointer;
   text-decoration: none;
 }
-.city-card:hover::before{ opacity:1; }
-.city-card:hover::after{ opacity:1; }
+.kota-kartu:hover::before{ 
+  opacity:1; 
+}
 
-.city-img{
+.kota-kartu:hover::after{ 
+  opacity:1; 
+}
+
+.kota-img{
   width: 175px;
   height: 175px;
   border-radius: 14px;
@@ -81,44 +86,63 @@
   border: 2px solid rgba(255,255,255,.15);
 }
 
-.city-text h3{
+.kota-text h3{
   margin:0;
   font-size: 18px;
   font-weight: 700;
 }
-.city-text p{
+.kota-text p{
   margin:4px 0 0 0;
   opacity:.8;
   font-size: 14px;
   line-height:1.4;
 }
 
-.city-card[data-tone="green"]  { --tone: var(--tone-green);  --tone-soft: var(--tone-green-soft);  --tone-glow: var(--tone-green-glow); }
-.city-card[data-tone="blue"]   { --tone: var(--tone-blue);   --tone-soft: var(--tone-blue-soft);   --tone-glow: var(--tone-blue-glow); }
-.city-card[data-tone="orange"] { --tone: var(--tone-orange); --tone-soft: var(--tone-orange-soft); --tone-glow: var(--tone-orange-glow); }
-.city-card[data-tone="purple"] { --tone: var(--tone-purple); --tone-soft: var(--tone-purple-soft); --tone-glow: var(--tone-purple-glow); }
+.kota-kartu[data-tone="green"]  { 
+  --tone: var(--tone-green);  
+  --tone-soft: var(--tone-green-soft);  
+  --tone-glow: var(--tone-green-glow); 
+}
+
+.kota-kartu[data-tone="blue"]   { 
+  --tone: var(--tone-blue);   
+  --tone-soft: var(--tone-blue-soft);   
+  --tone-glow: var(--tone-blue-glow); 
+}
+
+.kota-kartu[data-tone="orange"] { 
+  --tone: var(--tone-orange); 
+  --tone-soft: var(--tone-orange-soft); 
+  --tone-glow: var(--tone-orange-glow); 
+}
+
+.kota-kartu[data-tone="purple"] { 
+  --tone: var(--tone-purple); 
+  --tone-soft: var(--tone-purple-soft); 
+  --tone-glow: var(--tone-purple-glow); 
+}
 
 
 :root{
   
   --tone-green:       #2f8f4e;
-  --tone-green-soft:  color-mix(in srgb, var(--tone-green) 28%, transparent);
-  --tone-green-glow:  color-mix(in srgb, var(--tone-green) 20%, transparent);
+  --tone-green-soft:  color-mix(in srgb, var(--tone-green) 38%, transparent);
+  --tone-green-glow:  color-mix(in srgb, var(--tone-green) 30%, transparent);
 
   
   --tone-blue:        #1c7ed6;
-  --tone-blue-soft:   color-mix(in srgb, var(--tone-blue) 28%, transparent);
-  --tone-blue-glow:   color-mix(in srgb, var(--tone-blue) 20%, transparent);
+  --tone-blue-soft:   color-mix(in srgb, var(--tone-blue) 38%, transparent);
+  --tone-blue-glow:   color-mix(in srgb, var(--tone-blue) 30%, transparent);
 
  
   --tone-orange:      #d97706;
   --tone-orange-soft: color-mix(in srgb, var(--tone-orange) 30%, transparent);
-  --tone-orange-glow: color-mix(in srgb, var(--tone-orange) 22%, transparent);
+  --tone-orange-glow: color-mix(in srgb, var(--tone-orange) 32%, transparent);
 
   
   --tone-purple:      #7c3aed;
-  --tone-purple-soft: color-mix(in srgb, var(--tone-purple) 28%, transparent);
-  --tone-purple-glow: color-mix(in srgb, var(--tone-purple) 20%, transparent);
+  --tone-purple-soft: color-mix(in srgb, var(--tone-purple) 38%, transparent);
+  --tone-purple-glow: color-mix(in srgb, var(--tone-purple) 30%, transparent);
 
   --rec: rgba(199, 199, 199, 0.187);
   --recpoin: rgba(124, 124, 124, 0.183);
@@ -148,7 +172,7 @@ body.light{
   --bor: rgba(255, 255, 255, 0.1);
 }
 
-.recommendation {
+.rekomen {
   margin-left: auto;
   min-width: 190px;
   display: flex;
@@ -166,7 +190,7 @@ body.light{
   line-height: 1.3;
 }
 
-.recommendation .link {
+.rekomen .link {
   background: var(--rec);
   color:  var(--text);
   text-decoration: none;
@@ -176,12 +200,12 @@ body.light{
   transition: background 0.25s ease, transform 0.15s ease;
 }
 
-.recommendation .link:hover {
+.rekomen .link:hover {
   background: var(--recpoin);
   transform: translateX(-3px);
 }
 
-.recommendation strong {
+.rekomen strong {
   color: var(--tone);
   font-weight: 600;
 }
