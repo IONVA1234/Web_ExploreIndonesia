@@ -1,4 +1,4 @@
-/* ===== HERO SLIDESHOW ===== */
+
 .hero {
   position: relative;
   width: 90%;
@@ -38,13 +38,11 @@
   z-index: 2;
 }
 
-/* ===== BACK BUTTON ===== */
 .back-container {
   text-align: center;
   margin: 20px auto 0;
 }
 
-/* ===== BACK BUTTON BULAT DI HERO ===== */
 .hero .back-btn {
   position: absolute;
   top: 16px;
@@ -67,11 +65,10 @@
 
 .hero .back-btn:hover {
   background: #5BDB96;
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 
-/* ===== SECTION TENTANG ===== */
 .about-kota{
   width: 90%;
   max-width: 1100px;

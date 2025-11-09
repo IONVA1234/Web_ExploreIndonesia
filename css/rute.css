@@ -21,7 +21,7 @@
   padding: 16px;
   border-radius: 16px;
   background: var(--nav);
-  border: 1px solid rgba(255,255,255,.08);
+  border: 1px solid var(--recpoin);
   box-shadow: 0 8px 24px rgba(0,0,0,.28);
   color: var(--text);
   text-decoration: none;
@@ -64,7 +64,7 @@
 
 .kota-kartu:hover{
   transform: translateY(-3px);
-  border-color: rgba(255,255,255,.18);
+  border-color: var(--bor);
   box-shadow: 0 5px 15px rgba(0,0,0,.45);
   cursor: pointer;
   text-decoration: none;
@@ -209,3 +209,28 @@ body.light{
   color: var(--tone);
   font-weight: 600;
 }
+
+.judulbck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.back {
+  padding: 8px 14px;
+  background: var(--nav);
+  color: var(--text);
+  border-radius: 10px;
+  border: 1px solid var(--bor);
+  font-size: 14px;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.back:hover {
+  background: var(--recpoin);
+  transform: translateY(2px);
+  text-decoration: none;
+}
+
