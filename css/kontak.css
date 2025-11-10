@@ -1,0 +1,55 @@
+
+        .kontak-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 30px 10px;
+            border-radius: 12px;
+            margin: 86px auto;
+            margin-bottom: 80px;
+            max-width: 900px;
+        }
+
+        .form-section, .info-section {
+            background: var(--bgn);
+            border: 1px solid var(--brd);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 28px 24px;
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .kontak-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            transition: background 0.25s ease, transform 0.15s ease;
+        }
+
+        .kontak-form input,
+        .kontak-form textarea {
+            padding: 8px 10px;
+            border-radius: 5px;
+            border: 1px solid var(--brd);
+            font-size: 1em;
+            resize: vertical;
+        }
+
+        .kontak-form button {
+            background: var(--nav);
+            color: var(--text);
+            
+            border: 1px solid var(--brd);
+            border-radius: 5px;
+            padding: 10px 0;
+            font-size: 1em;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .kontak-form button:hover {
+            background: var(--recpoin);
+            transform: translateY(3px);
+        }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <link rel="icon" href="png/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gaya.css">
+    <link rel="stylesheet" href="css/rute.css">
+    <link rel="stylesheet" href="css/kontak.css">
+</head>
+
+<body class="no-anim">
+
+<header>
+  <div class="batas">
+    <a href="index.html" class="laman" ><img src="png/logo.png" alt="ExpIn" class="logo">Explore <span class="Indonesia">.Indonesia</span></a>
+    <nav>
+        <a href="index.html" >Beranda</a>
+        <a href="destinasi.html">Destinasi</a>
+        <a href="kontak.html" class="in">Kontak</a>
+        <label class="toggle">
+          <input type="checkbox" id="mode">
+          <span class="icon"></span>
+        </label>
+    </nav>
+</div>
+</header>
+
+
+    <main class="kontak-container">
+        <section class="form-section">
+            <h2>Hubungi Kami</h2>
+            <form class="kontak-form" onsubmit="return showpopup()">
+                <label>Nama</label>
+                <input type="text" placeholder="Masukkan nama Anda" required>
+                <label>Email</label>
+                <input type="email" placeholder="Masukkan email Anda" required>
+                <label>Pesan atau Pertanyaan</label>
+                <textarea placeholder="Tulis pesan Anda di sini..." rows="5" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+
+        </section>
+    </main>
+
+
+
+<footer>
+    <div class="down">
+    &copy; 2025 Explore Indonesia <br>— Crafted for travel inspirations, culinary discovery, and lodging references across Indonesia. All Rights Reserved.
+</div>
+</footer>
+<script src="script/mode.js"></script>
+<script src="script/after.js"></script>
+<script src="script/pesan.js"></script>
+</body>
+</html>

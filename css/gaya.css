@@ -72,7 +72,29 @@ body.light .icon::before {
   --border: #e5e7eb;
   --brd:rgba(0, 0, 0, 0.176);
   --link:#4177ff;
+   
+  --tone-green:       #2f8f4e;
+  --tone-green-soft:  color-mix(in srgb, var(--tone-green) 38%, transparent);
+  --tone-green-glow:  color-mix(in srgb, var(--tone-green) 30%, transparent);
+
   
+  --tone-blue:        #1c7ed6;
+  --tone-blue-soft:   color-mix(in srgb, var(--tone-blue) 38%, transparent);
+  --tone-blue-glow:   color-mix(in srgb, var(--tone-blue) 30%, transparent);
+
+ 
+  --tone-orange:      #d97706;
+  --tone-orange-soft: color-mix(in srgb, var(--tone-orange) 30%, transparent);
+  --tone-orange-glow: color-mix(in srgb, var(--tone-orange) 32%, transparent);
+
+  
+  --tone-purple:      #7c3aed;
+  --tone-purple-soft: color-mix(in srgb, var(--tone-purple) 38%, transparent);
+  --tone-purple-glow: color-mix(in srgb, var(--tone-purple) 30%, transparent);
+
+  --rec: rgba(199, 199, 199, 0.187);
+  --recpoin: rgba(124, 124, 124, 0.183);
+  --bor: rgba(39, 39, 39, 0.211);
 }
 body.light {
   --bg: radial-gradient(1200px 600px at 10% 0%, rgba(91, 140, 255, 0.235), transparent 60%),
@@ -87,6 +109,26 @@ body.light {
   --nav:rgba(91,140,255,.12);
   --brd:rgba(255,255,255,.06);
   --link:#88a9ff;
+
+  --tone-green:       #7bf2a1; 
+  --tone-green-soft:  color-mix(in srgb, var(--tone-green) 42%, transparent);
+  --tone-green-glow:  color-mix(in srgb, var(--tone-green) 34%, transparent);
+
+  --tone-blue:        #8cc4ff;
+  --tone-blue-soft:   color-mix(in srgb, var(--tone-blue) 42%, transparent);
+  --tone-blue-glow:   color-mix(in srgb, var(--tone-blue) 34%, transparent);
+
+  --tone-orange:      #ffcc88;
+  --tone-orange-soft: color-mix(in srgb, var(--tone-orange) 44%, transparent);
+  --tone-orange-glow: color-mix(in srgb, var(--tone-orange) 36%, transparent);
+
+  --tone-purple:      #c7a6ff;
+  --tone-purple-soft: color-mix(in srgb, var(--tone-purple) 42%, transparent);
+  --tone-purple-glow: color-mix(in srgb, var(--tone-purple) 34%, transparent);
+
+  --rec:rgba(255, 255, 255, 0.05);
+  --recpoin:rgba(255, 255, 255, 0.12);
+  --bor: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -139,7 +181,7 @@ a:hover {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: cEnter;
+  align-items: center;
   height: 64px;
 }
 
